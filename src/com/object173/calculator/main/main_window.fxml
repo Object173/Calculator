@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="245" maxWidth="315" minHeight="245.0" minWidth="315.0" prefHeight="245.0" prefWidth="315.0"
+      fx:controller="com.object173.calculator.main.MainController"
+      onKeyPressed="#onKeyPressed"
+      xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1">
+    <TextField alignment="CENTER_RIGHT" layoutY="5" layoutX="5"  prefHeight="40.0" prefWidth="315.0"
+               fx:id="expressionTextField">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </TextField>
+    <FlowPane layoutX="170" layoutY="50.0" prefHeight="200.0" prefWidth="150.0" maxHeight="Infinity">
+        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="7"
+             onAction="#onButtonClick"/>
+        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="8"
+                onAction="#onButtonClick"/>
+        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="9"
+                onAction="#onButtonClick"/>
+        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="4"
+                onAction="#onButtonClick"/>
+        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="5"
+                onAction="#onButtonClick"/>
+        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="6"
+                onAction="#onButtonClick"/>
+        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="1"
+                onAction="#onButtonClick"/>
+        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="2"
+                onAction="#onButtonClick"/>
+        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="3"
+                onAction="#onButtonClick"/>
+        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="."
+                onAction="#onButtonClick"/>
+        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="0"
+                onAction="#onButtonClick"/>
+        <Button fx:id="buttonSubmit" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="="
+                onAction="#onButtonClick"/>
+    </FlowPane>
+    <ScrollPane fitToWidth="true" layoutX="5" layoutY="50" prefHeight="200" prefWidth="165">
+        <FlowPane fx:id="operatorButtonPane" layoutY="36.0" prefHeight="200.0" prefWidth="165.0" maxHeight="Infinity"/>
+    </ScrollPane>
+</Pane>
